@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width;initial-scale=1.0" />
+        <meta name="Author" value="Mendel Groner" />
+        <link rel="stylesheet" type="text/css" href="styles/app.css" />
+        <title>SICP Solutions</title>
+    </head>
+    <body class="h-svh">
+        <header class="min-h-[10%] bg-black">
+            <div class="flex p-10 text-white">
+                <h1 class="text-4xl font-light">
+                    <a href="/">SICP Solutions</a>
+                </h1>
+                <nav class="content-end">
+                    <ul>
+                        <% for (const navItem of [{ href: '/about', title: 'About' }]) { %>
+                        <li class="font-light pl-4 text-1xl">
+                            <a href="<%= navItem.href %>"
+                                ><%= navItem.title %></a
+                            >
+                        </li>
+                        <% } %>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="min-h-[80%] p-10">
+            <h1 class="text-5xl font-light mb-5">SICP Solutions</h1>
+            <aside class="float-right ml-10 mb-3 w-[250px]">
+                <img
+                    src="images/sicp-cover.jpg"
+                    alt="The SICP 2nd Edition cover image"
+                />
+            </aside>
+            <p class="mb-3">
+                Structure and Interpretation of Computer Programs is timeless
+                classic in Computer Science and programming litigature.
+                Reverently called "The Wizard Book", "The Purple Book", and even
+                "The Programming Bible", it has had a mind-opening effect on
+                countless programmers. Despite the fact that this book was
+                published almost 50 years ago, it still remains a highly used
+                resource for programmers seeking to edge their game. It ranks
+                #39 on the list of
+                <a href="/https://hackernewsbooks.com/top-books-on-hacker-news"
+                    >top hacker news books of all time</a
+                >
+                at the time of writing.
+                <a href="https://teachyourselfcs.com">Teach Yourself CS</a>
+                recommends it as the go-to for Programming. I personally have
+                taken their advice and spent many hours self-studying this book
+                with the help of
+                <a
+                    href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDNgVzLPxF9o5UNKG1b-LFY90"
+                    >Brian Harvey's lectures</a
+                >.
+            </p>
+            <p class="mb-3">
+                This site keeps record of my soltions to the exercises found in
+                SICP. So far, I have completed the first 3 chapters and am
+                currently at the beginning of chapter 4. I do not have a strong
+                math background, and being that SICP is an MIT book and
+                therefore math-heavy, some of the problems required me to do
+                deep dives into the mathematical contexts of the subject matter.
+                Furthermore, there were certain problems that I skipped because
+                they were simply bogging me down. I kept note of those and hope
+                to return to them after I have finished completing the book. I
+                chose this book to study programming, and although I find the
+                math interesting and beneficial, it is not my main emphasis of
+                study at this time.
+            </p>
+            <p class="mb-3">
+                Feel free to browse my solutions here as a reference for your
+                personal study. However, visit
+                <a href="http://community.schemewiki.org/?sicp-solutions"
+                    >the community wiki</a
+                >
+                for a more comprehensive discussion on each problem. That is my
+                main reference when checking my work. If you see any errors or
+                would like to add improvement, you can make a PR on
+                <a href="https://github.com/mmgroner/sicp-solutions"
+                    >my GitHub repo</a
+                >
+                containing all solutions.
+            </p>
+            <hr class="my-5">
+            <!-- TODO: import exercises.json here -->
+        </main>
+
+        <!-- <footer class="min-h-[10%] bg-stone-500 p-10 text-white"></footer> -->
+    </body>
+</html>
