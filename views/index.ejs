@@ -83,7 +83,18 @@
                 >
                 containing all solutions.
             </p>
-            <hr class="my-5">
+            <hr class="my-5" />
+            <% for (const [chapter, exerciseList] of Object.entries(exercises))
+            { %>
+            <h1 class="text-3xl font-bold">Chapter <%= chapter %></h1>
+            <ul>
+                <% exerciseList.forEach(exercise => { %>
+                <li class="">
+                    <%= exercise.exerciseNumber %> <%= exercise.exerciseTitle %>
+                </li>
+                <% }); %>
+            </ul>
+            <% } %>
             <!-- TODO: import exercises.json here -->
         </main>
 
